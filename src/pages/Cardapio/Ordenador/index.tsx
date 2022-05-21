@@ -25,7 +25,7 @@ function Ordenador({ ordenador, setOrdenador }: Props) {
             onClick={() => setAberto(!aberto)}
             onBlur={() => setAberto(false)}
         >
-            <span>{ordenador || 'Ordenar por'}</span>
+            <span>{nomeOrdenador || 'Ordenar por'}</span>
             {aberto ? (
                 <MdKeyboardArrowUp size={20} />
             ) : (
